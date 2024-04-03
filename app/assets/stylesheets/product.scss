@@ -72,9 +72,18 @@
       color: white;
       font-weight: 700;
     }
+    .sold-out-container{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-end;
+      text-align: center;
+      font-weight: 700;
+  
+    }
     .soldout {
       width: 140px;
-      margin: 1em 0;
+      // margin: 1em 0;
       display: inline-block;
       background: rgba(224, 14, 14, 0.8);
       border: 1px solid rgba(224, 14, 14, 0.8);
@@ -86,6 +95,6 @@
       color: white;
       font-weight: 700;
       text-align: center;
-    }
+    } 
   }
 }
