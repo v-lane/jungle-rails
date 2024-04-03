@@ -1,3 +1,48 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+header {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.about-body {
+  margin-bottom: 2em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-text {
+  flex: 3;
+
+  h {
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin-right: 2em;
+  }
+}
+
+.about-image {
+  width: 400px;
+  height: auto;
+  flex: 1;
+
+  
+
+  img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    border-radius: 25%;  
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+
+  }
+}
