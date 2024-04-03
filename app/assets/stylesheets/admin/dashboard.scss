@@ -1,0 +1,33 @@
+header {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.card-deck {
+  display: flex;
+}
+
+
+
+.card {
+  width: 30vw;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-title {
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 0.25rem;
+  font-size: 4rem;
+  
+}
+
+.card-text {
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+
