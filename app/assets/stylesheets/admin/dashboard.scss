@@ -5,15 +5,25 @@ header {
 
 .card-deck {
   display: flex;
+  justify-content: space-around;
+  
+  a:link {
+    text-decoration: none;
+  }
 }
-
-
 
 .card {
   width: 30vw;
   min-width: 300px;
   max-width: 600px;
   margin: 0 auto;
+
+  &:hover {
+    transition: all 150ms linear;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
 }
 
 .card-title {

@@ -4,14 +4,17 @@
     <h1>Admin Dashboard</h1>
   </header>
   <article class="card-deck">
+  <%= link_to admin_products_path do%>
     <div class="card bg-success text-white mb-3">
-      <h2 class="card-title">18</h2>
+      <h2 class="card-title"><%= @products_count %></h2>
       <h3 class="card-text">Products</h3>
     </div>
-    <div class="card bg-info text-white mb-3">
-      <h2 class="card-title">18</h3>
+    <% end %>
+    <%= link_to root_path do%>
+    <div class="card bg-info text-white mb-3">  
+      <h2 class="card-title"><%= @categories_count %></h3>
       <h3 class="card-text">Categories</h3>
     </div>
-
-  </div>
+    <% end %>
+  </article>
 </section>
