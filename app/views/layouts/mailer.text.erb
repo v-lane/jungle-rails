@@ -1,18 +1,1 @@
-Order Confirmation: <%= @orders.id %>
-================================================
-
-Thank you for your order!
-
-Order details are below. You will receive an email within the next 48 hours when items have shipped.
-
-<% (@order.line_items).each do |item| %>
-
-<%= item.product.name %>
-Price: <%= humanized_money_with_symbol item.product.price %>
-Quantity: <%= item.quantity.to_i %>
-Item Total: <%= humanized_money_with_symbol product.price * item.quantity.to_i %>
--------------------------------------------------------------------------------
-<% end %>
-
-Order Total: <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
-
+<%= yield %>

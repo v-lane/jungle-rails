@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <h1>Order Confirmation: <%= @orders.id %> </h1>
+    <hr>
+    <h2> Thank you for your order! </h2>
+    <p> Order details are below. You will receive an email within the next 48 hours when items have shipped.</p>
+    <% (@order.line_items).each do |item| %>
+      <p>
+        <h4><%= item.product.name %></h4>
+        <p><strong>Price: </strong><%= humanized_money_with_symbol item.product.price %></p>
+        <p><strong>Quantity: </strong><%= item.quantity.to_i %></p>
+        <p><strong>Item Total: </strong><%= humanized_money_with_symbol product.price * item.quantity.to_i %></p>
+        <hr>
+      </p>
+    <% end %>
+    <hr>
+    <p><strong>Order Total: </strong><%= humanized_money_with_symbol @order.total_cents / 100.0 %></p>
+  </body>
+</html>
